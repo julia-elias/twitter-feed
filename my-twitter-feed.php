@@ -68,9 +68,7 @@ function getFeed() {
         )
     );
     */
-    // updates public variable so that it stores the most recent tweets    
-    return $feedData;
-    
+
 }
 
 function displayFeed($feed) {
@@ -92,8 +90,9 @@ function displayFeed($feed) {
 // add action so that most recent posts from twitter feed are retrieved when page is loaded
 add_action( 'wp_footer', 'callDisplayFeed', 10);
 function callDisplayFeed() {
+    
+    // retrieves and displays recent Tweet data
     $data = getFeed();
-    // test run to see if html will be displayed
     print_r($data);
     
     

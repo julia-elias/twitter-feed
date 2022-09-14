@@ -8,7 +8,7 @@ class twitterSlide {
 
     }
 
-    function getBox($feedData, ) {
+    function getBox($tweet) {
         return "
     <div class='tweet-box'>
         <h2>Latest Tweets</h2>
